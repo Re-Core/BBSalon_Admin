@@ -65,9 +65,9 @@ public class PostVideoViewHolder extends BaseViewHolder {
             btnPlay.show();
         }
 
-
-        Glide.with(itemView.getContext()).load(postVideoItem.getUserImg())
-                .into(imgUser);
+//
+//        Glide.with(itemView.getContext()).load(postVideoItem.getUserImg())
+//                .into(imgUser);
 
     }
 }

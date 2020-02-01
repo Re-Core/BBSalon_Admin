@@ -1,18 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.MainActivity">
+    tools:context=".Activity.MainActivity"
+    android:background="@color/colorAccent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameContainer"
+
+        android:layout_width="512dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Phone"
+        android:theme="@style/TextLabel"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtUserName"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_phone_android_black_24dp"
+            android:inputType="textPersonName"
+            android:padding="12dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="64dp"
+        android:text="Banan &amp; Basoz"
+        android:textColor="@color/enabled_brown"
+        android:textSize="64sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Salon"
+        android:textSize="54sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="ADMIN"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/btn_pink_rounded"
+        android:drawableStart="@drawable/ic_send_black_24dp"
+        android:drawablePadding="12dp"
+        android:drawableTint="@color/enabled_brown"
+        android:paddingStart="18sp"
+        android:paddingTop="18sp"
+        android:paddingEnd="18sp"
+        android:paddingBottom="18sp"
+        android:text="Send Code"
+        android:textAllCaps="false"
+        android:textColor="@color/enabled_brown"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/usernameContainer"
+        app:layout_constraintStart_toStartOf="@+id/usernameContainer"
+        app:layout_constraintTop_toBottomOf="@+id/usernameContainer"
+        app:layout_constraintVertical_bias="0.13999999" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
