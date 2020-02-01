@@ -4,16 +4,85 @@
     <color name="colorPrimaryDark">#442C2E</color>
     <color name="colorAccent">#FEEBE6</color>
 
+
+    <color name="green">#61C454</color>
+    <color name="red">#ED6B60</color>
+    <color name="yellow">#F6BF50</color>
+
+    <color name="active_brown">#584345</color>
+    <color name="enabled_brown">#837576</color>
+    <color name="disabled_brown">#A9A0A1</color>
+
+    <color name="box_outline_color">#FCC3B8</color>
+
+
     <color name="blueLink">#6299D8</color>
-    <color name="pink">#FFEDE8</color>
+    <color name="pink">#FEEAE6</color>
     <color name="textOnPink">#6A6361</color>
 
     <color name="light_pink">#FFF9F9</color>
     <color name="dark_brown">#442C2E</color>
     <color name="bottomBarPink">#FEDCD0</color>
 
-    <color name="content_text_color">#999da4</color>
-
     <color name="seperator_on_pink">#D9CFD0</color>
+    <!--
+    EXTRA
+    -->
+
+    <color name="bottomText">#6b6b76</color>
+    <color name="rippleEffectColor">#f816a463</color>
+    <color name="btnSigIn">#1fbad6</color>
+    <color name="btnRegister">#83838c</color>
+    <color name="baseReleaseColor">#212121</color>
+    <color name="basePressColor">#FAFAFA</color>
+    <color name="ballPressColor">#9E9E9E</color>
+    <color name="dividerColor">#1F000000</color>
+
+
+
+    <color name="white">#ffffff</color>
+    <color name="dark">#243447</color>
+    <color name="dark_navigation_view">#243447</color>
+
+
+
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+
+    <color name="card_bg_color_dark">#1a2533</color>
+    <color name="text_title_color">#256bd6</color>
+    <color name="content_text_color">#999da4</color>
+    <color name="edit_text_color_dark">#999da4</color>
+
+    <color name="edit_text_dark_theme">#394859</color>
+
+    <color name="tab_indicator">#c0c0c0</color>
+    <color name="intro_title_black">#000000</color>
+    <color name="intro_description">#656565</color>
+
+    <color name="bgcolor">#f2f3f7</color>
+    <color name="icon_tint_color">#6a6c6c</color>
+
+    //added
+    <color name="address">#2F7092</color>
+    <color name="followers">#0D5D98</color>
+    <color name="headings">#3797CF</color>
+    <color name="solidCircle">#AAFFFFFF</color>
+    <color name="circleBorder">#50FFFFFF</color>
+    <color name="gradEnd">#67EFC8</color>
+    <color name="gradStart">#63C9FF</color>
+    <color name="followersBg">#65DCE5</color>
+    <color name="followingBg">#49BEFF</color>
+    <color name="grey">#E5E5E5</color>
+
+    //char recycler color
+    <color name="card_bg_color">#FBFBFB</color>
+    <color name="card_bg_dark_color">#0e0e0e</color>
+    <color name="title_text_color">#258bd6</color>
+    <color name="black">#000000</color>
+
+    <color name="grey_line_color">#E7E7E7</color>
+
+
 
 </resources>

@@ -5,7 +5,6 @@ import com.google.firebase.database.ServerValue;
 public class PostVideoItem {
 
     private String videoURL;
-    private String userImg;
     private Object timeStamp;
     private String contentType;
     private String title;
@@ -18,9 +17,8 @@ public class PostVideoItem {
     }
 
 
-    public PostVideoItem(String videoURL, String userImg, Object timeStamp, String contentType, String title, String description, String postKey, String userId) {
+    public PostVideoItem(String videoURL, Object timeStamp, String contentType, String title, String description, String postKey, String userId) {
         this.videoURL = videoURL;
-        this.userImg = userImg;
         this.timeStamp = ServerValue.TIMESTAMP;
         this.contentType = contentType;
         this.title = title;
@@ -37,13 +35,7 @@ public class PostVideoItem {
         this.videoURL = videoURL;
     }
 
-    public String getUserImg() {
-        return userImg;
-    }
 
-    public void setUserImg(String userImg) {
-        this.userImg = userImg;
-    }
 
 
 
@@ -85,5 +77,13 @@ public class PostVideoItem {
 
     public void setUserId(String userId) {
         this.userId = userId;
+    }
+
+    public Object getTimeStamp() {
+        return timeStamp;
+    }
+
+    public void setTimeStamp(Object timeStamp) {
+        this.timeStamp = timeStamp;
     }
 }
