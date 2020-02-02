@@ -11,13 +11,13 @@ public class PostVideoItem {
     private String description;
     private String postKey;
     private String userId;
-
+    private String likesCounter;
+    private String commentCounter;
 
     public PostVideoItem() {
     }
 
-
-    public PostVideoItem(String videoURL, Object timeStamp, String contentType, String title, String description, String postKey, String userId) {
+    public PostVideoItem(String videoURL, Object timeStamp, String contentType, String title, String description, String postKey, String userId, String likesCounter, String commentCounter) {
         this.videoURL = videoURL;
         this.timeStamp = ServerValue.TIMESTAMP;
         this.contentType = contentType;
@@ -25,6 +25,8 @@ public class PostVideoItem {
         this.description = description;
         this.postKey = postKey;
         this.userId = userId;
+        this.likesCounter = likesCounter;
+        this.commentCounter = commentCounter;
     }
 
     public String getVideoURL() {
@@ -34,10 +36,6 @@ public class PostVideoItem {
     public void setVideoURL(String videoURL) {
         this.videoURL = videoURL;
     }
-
-
-
-
 
     public String getContentType() {
         return contentType;
@@ -85,5 +83,21 @@ public class PostVideoItem {
 
     public void setTimeStamp(Object timeStamp) {
         this.timeStamp = timeStamp;
+    }
+
+    public String getLikesCounter() {
+        return likesCounter;
+    }
+
+    public void setLikesCounter(String likesCounter) {
+        this.likesCounter = likesCounter;
+    }
+
+    public String getCommentCounter() {
+        return commentCounter;
+    }
+
+    public void setCommentCounter(String commentCounter) {
+        this.commentCounter = commentCounter;
     }
 }

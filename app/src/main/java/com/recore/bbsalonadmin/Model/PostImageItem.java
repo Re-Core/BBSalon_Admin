@@ -11,11 +11,15 @@ public class PostImageItem {
     private String description;
     private String postKey;
     private String userId;
+    private String likesCounter;
+    private String commentCounter;
+
 
     public PostImageItem() {
     }
 
-    public PostImageItem(String imgURL, Object timeStamp, String contentType, String title, String description, String postKey, String userId) {
+
+    public PostImageItem(String imgURL, Object timeStamp, String contentType, String title, String description, String postKey, String userId, String likesCounter, String commentCounter) {
         this.imgURL = imgURL;
         this.timeStamp = ServerValue.TIMESTAMP;
         this.contentType = contentType;
@@ -23,6 +27,8 @@ public class PostImageItem {
         this.description = description;
         this.postKey = postKey;
         this.userId = userId;
+        this.likesCounter = likesCounter;
+        this.commentCounter = commentCounter;
     }
 
     public String getImgURL() {
@@ -32,8 +38,6 @@ public class PostImageItem {
     public void setImgURL(String imgURL) {
         this.imgURL = imgURL;
     }
-
-
 
     public String getContentType() {
         return contentType;
@@ -81,5 +85,21 @@ public class PostImageItem {
 
     public void setTimeStamp(Object timeStamp) {
         this.timeStamp = timeStamp;
+    }
+
+    public String getLikesCounter() {
+        return likesCounter;
+    }
+
+    public void setLikesCounter(String likesCounter) {
+        this.likesCounter = likesCounter;
+    }
+
+    public String getCommentCounter() {
+        return commentCounter;
+    }
+
+    public void setCommentCounter(String commentCounter) {
+        this.commentCounter = commentCounter;
     }
 }

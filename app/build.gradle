@@ -39,6 +39,7 @@ dependencies {
     //spot dialog
     implementation 'com.github.d-max:spots-dialog:0.7@aar'
 
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
