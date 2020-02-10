@@ -3,6 +3,8 @@ package com.recore.bbsalonadmin.Common;
 import android.text.format.DateFormat;
 
 
+import com.recore.bbsalonadmin.Model.User;
+
 import java.util.Calendar;
 import java.util.Locale;
 
@@ -20,7 +22,9 @@ public class Common {
     public static final String cartRef = "CartList";
     public static final String AppointmentRef = "Appointments";
 
-//    public static User currentUser;
+    public static final String AdminRef = "Admins";
+
+    public static User currentUser;
 
     public static String timeAndYearStampToString(long time) {
         Calendar calendar = Calendar.getInstance(Locale.ENGLISH);

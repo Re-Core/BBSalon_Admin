@@ -6,19 +6,28 @@ public class User {
     private String userId;
     private String userPhone;
     private String userAvatar;
-
+    private String userCode;
     private Object userTimeStamp;
-
 
     public User() {
     }
 
-    public User(String username, String userId, String userPhone, String userAvatar, Object userTimeStamp) {
+
+    public User(String username, String userId, String userPhone, String userAvatar, String userCode, Object userTimeStamp) {
         this.username = username;
         this.userId = userId;
         this.userPhone = userPhone;
         this.userAvatar = userAvatar;
+        this.userCode = userCode;
         this.userTimeStamp = userTimeStamp;
+    }
+
+    public String getUserCode() {
+        return userCode;
+    }
+
+    public void setUserCode(String userCode) {
+        this.userCode = userCode;
     }
 
     public String getUsername() {

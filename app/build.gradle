@@ -38,6 +38,10 @@ dependencies {
     implementation 'io.paperdb:paperdb:2.6'
     //spot dialog
     implementation 'com.github.d-max:spots-dialog:0.7@aar'
+    //mp Android chart
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    //spinner
+    implementation 'com.github.tiper:MaterialSpinner:1.4.1'
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.12'

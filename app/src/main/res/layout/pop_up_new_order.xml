@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="24dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="6dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="18dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/userContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:theme="@style/TextLabel"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:drawableTint="@color/active_brown"
+                    android:id="@+id/edtUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_person_black_24dp"
+                    android:inputType="textPersonName"
+                    android:padding="12dp"
+                    android:textSize="24sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phoneContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                android:theme="@style/TextLabel"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:drawableTint="@color/active_brown"
+                    android:id="@+id/edtPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_phone_android_black_24dp"
+                    android:inputType="phone"
+                    android:padding="12dp"
+                    android:textSize="24sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:hint="Date"
+                android:id="@+id/btnDate"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textSize="24sp"
+                android:padding="12dp"
+                android:drawableEnd="@drawable/ic_calendar_today_24px"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:textAlignment="textStart"
+                android:hint="Time"
+                android:textAllCaps="false"
+                android:drawableTint="@color/active_brown"
+                android:id="@+id/btnTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_watch_later_black_24dp"
+                android:padding="12dp"
+                android:textSize="24sp" />
+
+            <com.tiper.MaterialSpinner
+                android:layout_marginTop="6dp"
+                android:textSize="12sp"
+                android:id="@+id/edtState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="State"
+                android:prompt="@string/app_name"
+                android:src="@drawable/ic_outlined_flag_24px" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/billContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bill"
+                android:theme="@style/TextLabel"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:drawableTint="@color/active_brown"
+                    android:id="@+id/edtBill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_attach_money_24px"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:textSize="24sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:drawableTint="@color/textOnPink"
+                android:id="@+id/btnCreateOrder"
+                android:layout_marginTop="12dp"
+                android:padding="12dp"
+                android:textAllCaps="false"
+                android:textSize="24sp"
+                android:textColor="@color/textOnPink"
+                android:drawableStart="@drawable/ic_create_black_24dp"
+                android:text="Create"
+                android:background="@drawable/btn_pink_rounded"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.cardview.widget.CardView>
